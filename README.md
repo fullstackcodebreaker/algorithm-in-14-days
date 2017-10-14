@@ -1,3 +1,13 @@
+# 
+
+# Why Two Weeks?
+
+Doingchanging things 1 step or 1% at a time, is a great way to improve almost anything in your life.
+
+# 
+
+# 
+
 # What is algorithm
 
 ---
