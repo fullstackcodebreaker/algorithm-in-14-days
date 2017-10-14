@@ -30,6 +30,7 @@ For our implementation, we will create a constructor named `Stack`. Each instanc
 
 [/&lt;script src="https://gist.github.com/emekaonu/3480facc31a1bee1527fc14d0c03e9c4.js"&gt;&lt;/script&gt;](/<script src="https://gist.github.com/emekaonu/3480facc31a1bee1527fc14d0c03e9c4.js"></script>)
 
+
 ```
 function Stack() {
     this._size = 0;
