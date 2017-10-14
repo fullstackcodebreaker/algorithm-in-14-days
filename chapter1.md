@@ -1,7 +1,3 @@
-# '
-
-# ![](/assets/Screen Shot 2017-10-14 at 1.20.02 AM.png)
-
 # What is algorithm
 
 An algorithm is a step-by-step procedure for solving a problem. Algorithms are often used in many real life problems. In computer science, algorithm has a special meaning. It is defined to have these features:
