@@ -12,7 +12,5 @@ An algorithm is a step-by-step procedure for solving a problem. Algorithms are o
 
 # Techniques used for the analysis of algorithms
 
-This
 
-GitBook allows you to organize your book into chapters, each chapter is stored in a separate file like this one.
 
