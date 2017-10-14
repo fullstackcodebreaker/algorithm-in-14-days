@@ -33,9 +33,7 @@ function Stack() {
 
 `this._storage`enables each instance of`Stack`to have its own container for storing data;
 
-`this._size`reflects the number of times data was pushed to the current version of a`Stack`. If a new instance of`Stack`is created and data is pushed into its storage, then`this._size`will increase to 1. If data is pushed, again, into the stack,
-
-`this._size`will increase to 2. If data is removed from the stack, then`this._size`will decrease to 1.
+`this._size`reflects the number of times data was pushed to the current version of a`Stack`. If a new instance of`Stack`is created and data is pushed into its storage, then`this._size`will increase to 1. If data is pushed, again, into the stack, `this._size`will increase to 2. If data is removed from the stack, then`this._size`will decrease to 1.
 
 #### Methods of a Stack
 
