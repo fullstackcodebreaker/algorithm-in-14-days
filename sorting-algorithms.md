@@ -16,7 +16,7 @@ Time complexity of an algorithm quantifies the amount of time taken by an algori
 
 Time complexity analysis in programming is just an extremely simplified mathematical way of analyzing how long an algorithm with a given number of inputs \(n\) will take to complete it’s task. It’s usually defined using **Big-O notation.**
 
-##### What’s Big O notation, you ask?
+##### What’s Big O notation, you ask?
 
 Big-O notation is a way of converting the overall steps of an algorithm into algebraic terms, then excluding lower order constants and coefficients that don’t have that big an impact on the overall complexity of the problem.
 
@@ -25,7 +25,6 @@ Regular       Big-O
 2             O(1)   --> It's just a constant number
 2n + 10       O(n)   --> n has the largest effect
 5n^2          O(n^2) --> n^2 has the largest effect
-
 ```
 
 In short, all this example is saying is: we only look at the factor in our expression that has the potential greatest impact on the value that our expression will return. \(This changes as the constant gets extremely large and n gets small, but let’s not worry about that for now\).
@@ -40,8 +39,6 @@ Below are some common time complexities with simple definitions. Feel free to ch
 
 With this knowledge in hand, lets see the number of steps that each of these time complexities entails:
 
-
-
 ```
 let n = 16;
 O (1) = 1 step "(awesome!)"
@@ -49,17 +46,14 @@ O (log n) = 4 steps  "(awesome!)" -- assumed base 2
 O (n) = 16 steps "(pretty good!)"
 O(n^2) = 256 steps "(uhh..we can work with this?)"
 O(2^n) = 65,536 steps "(...)"
-
 ```
 
 As you can see, things can easily become orders of magnitude more complex depending on the complexity of your algorithm. Luckily, computers are powerful enough to still handle really large complexities relatively quickly.
 
 So how do we go about analyzing our code with Big-O notation?
 
-  
 Well here are some quick and simple examples of how you can apply this knowledge to algorithms you might encounter in the wild or code up yourself.
 
-  
 We’ll use the data structures below for our examples:
 
 ```
@@ -73,7 +67,7 @@ var friends = {
 var sortedAges = [22, 24, 27, 29, 31]
 ```
 
-#### **O\(1\) — Constant Time** {#1787}
+#### **O\(1\) — Constant Time** {#1787}
 
 Value look ups when you know the key \(objects\) or the index \(arrays\) always take one step, and are thus constant time.
 
@@ -100,7 +94,7 @@ function thisOld(num, array){
   if( array[midPoint] < num ) --> only look at second half of the array
   if( array[midpoint] > num ) --> only look at first half of the array
   //recursively repeat until you arrive at your solution
-  
+
 }
 thisOld(29, sortedAges) // returns true 
 //Notes
@@ -110,7 +104,7 @@ thisOld(29, sortedAges) // returns true
 //We'll get into recursion in another post!
 ```
 
-#### **O\(n\) — Linear Time** {#eee6}
+#### **O\(n\) — Linear Time** {#eee6}
 
 You have to look at every item in the array or list to accomplish the task. Single **for loops **are almost always linear time. Also array methods like **indexOf **are also linear time. You’re just abstracted away from the looping process.
 
@@ -151,8 +145,6 @@ addedAges(sortedAges); //[ 46, 49, 51, 53, 51, 53, 55, 56, 58, 60 ]
 
 Exponential time is usually for situations where you don’t know that much, and you have to try every possible combination or permutation.
 
-
-
 ```
 //The number of steps it takes to accomplish a task is a constant to the n power
 
@@ -169,18 +161,15 @@ To help you with the problem solving process, here are some simple questions to 
 | **step 1. **Does this solve the problem? | Yes =&gt; |
 | :--- | :--- |
 | **Step 2. **Do you have time to work on this? | **Yes **=&gt; Go to step 3. **No** =&gt; come back for it later and goto step 6 for now |
-| **Step 3. **Does it cover all edge cases?  | Yes =&gt;  |
+| **Step 3. **Does it cover all edge cases? | Yes =&gt; |
 | **Step 4. **Are my complexities as low as possible? | Yes =&gt; Goto step 5. No =&gt; rewrite or modifiy into a new solution. |
 | **Step 5. **Is my code DRY? | Yes =&gt; |
 | Rejoice |  |
-
-
 
 Analyze time complexity any and all times you are trying to solve a problem. It’ll make you a better developer in the log run. Your teammates and users will love you for it.
 
 Again, most problems you will face as programmer — whether algorithmic or programmatic — will have tens if not hundreds of ways of solving it. They may vary in how they solve the problem, but they all still solve that problem.
 
-  
 You could be making decisions between whether to use sets or graphs to store data. You could be deciding whether or not to use Angular, React, or Backbone for a team project. All of these solutions solve the same problem in a different way.
 
 Given this, it’s hard to say there is a single “right” or “best” answer to these problems. But it is possible to say there are “better” or “worse” answers to a given problem.
@@ -204,17 +193,10 @@ Here’s a final recap:
 * **O\(C^n\) — **
   Exponential: The number of steps it takes to accomplish a task is a constant to the n power \(pretty large number\).
 
-  
 And here are some helpful resources to learn more:
 
 * [Wikipedia](https://en.wikipedia.org/wiki/Time_complexity)
 * The [Big O Cheat Sheet](http://bigocheatsheet.com/) is a great resource with common algorithmic time complexities and a graphical representation. Check it out!
-
-
-
-
-
-
 
 
 
