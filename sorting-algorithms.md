@@ -1,26 +1,22 @@
-Time Complexity
+
+
+# 
 
 # What makes an algorithm "fast"?
 
+---
 
+## Space** **Complexity
 
-### Evaluating Sorting Algorithms:
+Space complexity of an algorithm quantifies the amount of space or memory taken by an algorithm to run as a function of the length of the input.
 
-## Complexity
+---
 
-**Time**Complexity
+## Time Complexity 
 
-**Space**Complexity
+Time complexity of an algorithm quantifies the amount of time taken by an algorithm to run as a function of the length of the input.
 
-
-
-
-
-
-
-
-
-
+---
 
 
 
