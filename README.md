@@ -8,7 +8,9 @@ An algorithm is a step-by-step procedure for solving a problem. Algorithms are o
 
 * It must terminate after finite numbers of steps
 
-# Application of algorithm in various disciplinesTechniques u
+# Application of algorithms in various disciplines
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+# Techniques used for the analysis of algorithms
+
+
 
