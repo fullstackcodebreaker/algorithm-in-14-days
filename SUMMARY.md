@@ -8,7 +8,6 @@
 * Recursion
 * [Searching](searching-algorithm.md)
 * Sorting
-* [Day 3](day-3.md)
 * Day 4
 * Day 5
 * Day 6
