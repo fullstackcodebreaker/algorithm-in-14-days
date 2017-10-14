@@ -14,11 +14,11 @@ To provide a more technical example of a stack, let us use the 'undo' operation 
 
 ### Operations of a Stack
 
-Since we now have a conceptual model of a stack, let us define the two operations of a stack:
+There are two operations of stack:
 
-* `push(data)`adds data.
+* `push(data)`-&gt; adds data.
 
-* `pop()`removes the most recently added data.
+* `pop()`-&gt; removes the most recently added data.
 
 ### Properties of a Stack
 
