@@ -197,6 +197,7 @@ And here are some helpful resources to learn more:
 
 * [Wikipedia](https://en.wikipedia.org/wiki/Time_complexity)
 * The [Big O Cheat Sheet](http://bigocheatsheet.com/) is a great resource with common algorithmic time complexities and a graphical representation. Check it out!
+* [http://stackoverflow.com/qu...](http://disq.us/url?url=http%3A%2F%2Fstackoverflow.com%2Fquestions%2F487258%2Fplain-english-explanation-of-big-o%3ACN0CaCCAo-l9YeAH0jr9p76eOpo&cuid=1938040)
 
 
 
