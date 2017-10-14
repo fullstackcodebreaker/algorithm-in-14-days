@@ -6,16 +6,17 @@
   * [Day 2](day-2.md)
   * [Day 3](day-3.md)
 * Recursion
+  * Day 4
+  * Day 5
+  * Day 6
 * [Searching](searching-algorithm.md)
+  * Day 7
+  * Day 8
+  * Day 9
 * Sorting
-* [Day 4](day-4.md)
-* Day 5
-* Day 6
-* Day 7
-* Day 8
-* Day 9
-* Day 10
-* Day 11
-* Day 12
-* Day 13
+  * Day 10
+  * Day 11
+  * Day 12
+  * Day 13
+  * Day 14
 

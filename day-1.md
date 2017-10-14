@@ -28,8 +28,6 @@ Since we now have a conceptual model of a stack, let us define the two operation
 
 For our implementation, we will create a constructor named `Stack`. Each instance of `Stack`will have two properties:`_size`and`_storage`.
 
-[/&lt;script src="https://gist.github.com/emekaonu/3480facc31a1bee1527fc14d0c03e9c4.js"&gt;&lt;/script&gt;](/<script src="https://gist.github.com/emekaonu/3480facc31a1bee1527fc14d0c03e9c4.js"></script>)
-
 
 ```
 function Stack() {
