@@ -6,7 +6,7 @@
   * [Day 2](day-2.md)
   * [Day 3](day-3.md)
 * Recursion
-  * Day 4
+  * [Day 4](day-4.md)
   * Day 5
   * Day 6
 * [Searching](searching-algorithm.md)

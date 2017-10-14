@@ -22,7 +22,7 @@ There are two operations of stack:
 
 ### Properties of a Stack
 
-For our implementation, we will create a constructor named `Stack`. Each instance of `Stack`will have two properties:`_size`and`_storage`.
+For a given constructor, each instance of the constructor has two properties`_size`and`_storage`.
 
 ```
 function Stack() {
