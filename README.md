@@ -2,19 +2,32 @@
 
 ---
 
-An algorithm is a step-by-step procedure for solving a problem. Algorithms are often used in many real life problems. In computer science, algorithm has a special meaning. It is defined to have these features:
+Simply put, an algorithm is a series of contained steps, which you follow in order to achieve some goal, or to produce some output. Let’s take for example your grandma’s recipe for baking a cake. Wait, does that count as an algorithm? Sure it does!
 
-* Algorithm must have some data to operate on it
 
-* It must produce at least one result
 
-* It must terminate after finite numbers of steps
+```
+function BakeCake(flavor, icing){
+"
+ 1. Heat Oven to 350 F
+ 2. Mix flour, baking powder, salt
+ 3. Beat butter and sugar until fluffy
+ 4. Add eggs.
+ 5. Mix in flour, baking powder, salt
+ 6. Add milk and " + flavor + "
+ 7. Mix further
+ 8. Put in pan
+ 9. Bake for 30 minutes
+10." + if(icing === true) return 'add icing' + "
+10. Stuff your face
+"
+}
+BakeCake('vanilla', true) => deliciousness
+```
 
-History of algorithms can be traced back to ancients Greek.
+In the same way you can slice a pie a 100 different ways, you can solve a single problem with many different algorithms. Some solutions are just more efficient, taking less time and requiring less space than others.
 
-An efficient method for finding Greatest Common Divisor was proposed by** Euclid**
-
-Systematics study of algorithm was done in 50 AD by Alkhawarizmi.
+ 
 
 ---
 
