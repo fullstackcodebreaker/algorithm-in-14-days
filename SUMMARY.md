@@ -1,7 +1,7 @@
 # Summary
 
 * [Overview](README.md)
-* Data Structures
+* [Data Structures](data-structures.md)
   * [Day 1](day-1.md)
   * [Day 2](day-2.md)
 * Recursion
