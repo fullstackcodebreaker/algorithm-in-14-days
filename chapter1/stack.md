@@ -1,8 +1,4 @@
 ![](/assets/stack.png)
 
-
-
-A stack of book is a great example of stack. 
-
-
+A stack of books are great example of stack. 
 
