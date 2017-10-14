@@ -1,9 +1,6 @@
-![](/assets/Screen Shot 2017-10-14 at 12.31.12 PM.png)
+#### In programming courses, we all need to study data structures. Data structures are mechanisms in which data is organized in computer systems and used by computer programs. The aim of data structures is to organize data so as to use it in efficient way.
 
-```
-{% gistrun id="e57fa69d4697091a20cec1f240bfaa0f" %}
-{% endgistrun %}
-```
+#### 
 
 
 

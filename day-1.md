@@ -1,6 +1,8 @@
 # Stacks & Queues
 
-Two of the most commonly used data structures in web development are stacks and queues. Many users of the Internet, including web developers, are unaware of this amazing fact. If you are one of these developers, then prepare yourself for two enlightening examples: the 'undo' operation of a text editor uses a stack to organize data; the event-loop of a web browser, which handles events \(clicks, hoovers, etc.\), uses a queue to process data.
+In very simple terms, a stack is a collection of objects in which objects are accessed in **LIFO** \(**L**ast **I**n **F**irst **O**ut\) fashion. Whereas a queue is a collection of objects in which objects are accessed in **FIFO** \(**F**irst **I**n **F**irst **O**ut\) sequence.
+
+Many users of the Internet, including web developers, are unaware of this amazing fact. If you are one of these developers, then prepare yourself for two enlightening examples: the 'undo' operation of a text editor uses a stack to organize data; the event-loop of a web browser, which handles events \(clicks, hoovers, etc.\), uses a queue to process data.
 
 ---
 
@@ -27,7 +29,6 @@ Since we now have a conceptual model of a stack, let us define the two operation
 #### Properties of a Stack
 
 For our implementation, we will create a constructor named `Stack`. Each instance of `Stack`will have two properties:`_size`and`_storage`.
-
 
 ```
 function Stack() {
