@@ -4,6 +4,12 @@ Every **web developer** who has written HTML and loaded it into a web browser ha
 
 Every **user** of the Internet who has, in turn, consumed information on the Internet has received it in the form of a tree—the DOM.
 
+Now, here's the climax: The article that you are reading at this moment is rendered in your browser as a tree! The paragraph that you are reading is represented as text in a`<p>`element; the`<p>`element is nested inside a`<body>`element; and the`<body>`element is nested inside an`<html>`element.
+
+The nesting of data is similar to a family tree. The`<html>`element is a parent, the`<body>`element is a child, and the`<p>`element is a child of the`<body>`element. If this analogy of a tree seems useful to you, then you will find comfort in knowing that more analogies will be used during our implementation of a tree.
+
+In this article, we will create a tree using two different methods of tree traversal: Depth-First Search \(DFS\) and Breadth-First Search \(BFS\). \(If the word traversal is unfamiliar to you, consider it to mean visiting every node of the tree.\) Both of these types of traversals highlight different ways of interacting with a tree; both travels, moreover, incorporate the use of data structures that we've covered in this series. DFS uses a stack and BFS uses a queue to visit nodes. That's cool!
+
 # Linked List
 
 Two of the most commonly taught data structures in computer science are the singly-linked list and doubly-linked list.

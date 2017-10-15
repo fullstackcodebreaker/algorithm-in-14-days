@@ -1,5 +1,7 @@
 # Tree
 
+Trees are a hierachical data structure that we use all the time.
+
 Every **web developer** who has written HTML and loaded it into a web browser has created a tree, which is referred to as the Document Object Model \(DOM\).
 
 Every **user** of the Internet who has, in turn, consumed information on the Internet has received it in the form of a tree—the DOM.

@@ -142,15 +142,9 @@ Stack.prototype.pop = function() {
 
 ---
 
-## From Stack to Queue
-
-A stack is useful when we want to add data in sequential order and remove data. Based on its definition, a stack can remove only the most recently added data. What happens if we want to remove the oldest data? We want to use a data structure named queue.
-
----
-
 ## Queues
 
-Similar to a stack, a queue is a linear data structure. Unlike a stack, a queue deletes only the oldest added data.
+A stack is useful when we want to add data in sequential order and remove data. Based on its definition, a stack can remove only the most recently added data. What happens if we want to remove the oldest data? We want to use a data structure named **queue**.
 
 To help you conceptualize how this would work, let's take a moment to use an analogy. Imagine a queue being very similar to the ticketing system of a deli. Each customer takes a ticket and is served when their number is called. The customer who takes the first ticket should be served first.
 
@@ -339,14 +333,12 @@ Queue.prototype.dequeue = function() {
 3. Given a string, determine if the parenthesis in the string are balanced. 
    Ex: balancedParens\( 'sqrt\(5\*\(3+8\)/\(4-2\)\)' \) =&gt; true 
    Ex: balancedParens\( 'Math.min\(5,\(6-3\)\)\(' \) =&gt; false
-4. Towers of Hanoi - https://en.wikipedia.org/wiki/Tower\_of\_Hanoi You are given three towers \(stacks\) and N disks, each of different size. You can move the disks according to three constraints: 
+4. Towers of Hanoi - [https://en.wikipedia.org/wiki/Tower\_of\_Hanoi](https://en.wikipedia.org/wiki/Tower_of_Hanoi) You are given three towers \(stacks\) and N disks, each of different size. You can move the disks according to three constraints: 
    1. only one disk can be moved at a time 
    2. when moving a disk, you can only use pop \(remove the top element\) and push \(add to the top of a stack\) 
    3. no disk can be placed on top of a disk that is smaller than it 
 
 The disks begin on tower\#1. Write a function that will move the disks from tower\#1 to tower\#3 in such a way that none of the constraints are violated.
 
-When you are done, see solutions at: 
-
-
+When you are done, see solutions at:
 
