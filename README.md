@@ -30,13 +30,9 @@ function BakeCake(flavor, icing){
 BakeCake('vanilla', true) => deliciousness
 ```
 
-In the same way you can slice a pie a 100 different ways, you can solve a single problem with many different algorithms. Some solutions are just more efficient, taking less time and requiring less space than others.
+In the same way you can slice a pie a 100 different ways, you can solve a single problem with many different algorithms. Some solutions are just more efficient, taking less time and requiring less space than others
 
 ---
-
-# Application of algorithms in various disciplines
-
-# Techniques used for the analysis of algorithms
 
 
 
