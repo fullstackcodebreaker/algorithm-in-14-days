@@ -36,7 +36,7 @@ In the same way you can slice a pie a 100 different ways, you can solve a single
 
 The book will facilitate the understanding of common issues when writing performant codes.
 
-#  Table of Content
+# Table of Content
 
 ### Data Structure
 
@@ -74,7 +74,7 @@ The book will facilitate the understanding of common issues when writing perform
 * Quick
 * Selection
 
-# **       **How can I contact you? 📩
+# How can I contact you? 📩
 
 If you want to say hello, contribute by telling that some part is not well explained, suggest a new topic or share some good experience you had applying any concept explained here, you are welcome to drop me an email at:
 
