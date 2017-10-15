@@ -1,4 +1,4 @@
-# 
+
 
 # Why 14 Days?
 
@@ -38,10 +38,10 @@ In the same way you can slice a pie a 100 different ways, you can solve a single
 
 ### Data Structure
 
-* Stack 
-* Queue
-* Linkedin List
+* Stack & Queue  --- Day 1
+* Linkedin List  ---- Day 2
 * tree
+
 * Set
 * heap
 * Graph
@@ -67,15 +67,12 @@ In the same way you can slice a pie a 100 different ways, you can solve a single
 ### **Sorting algorithm**
 
 * Bubble sort
-* Heap 
+* Heap 
 * Insertion
 * Merge
 * Quick
 * Selection
 
-**  
+**    
 **
-
-  
-
 
