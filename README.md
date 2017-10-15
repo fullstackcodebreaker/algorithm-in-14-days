@@ -34,7 +34,11 @@ In the same way you can slice a pie a 100 different ways, you can solve a single
 
 # Why this book?
 
-The book will facilitate the understanding of common issues when writing performant codes.
+I wrote this book because I am super frustrated with the interview process for becoming an engineer. Companies ask lots of super algorithmic questions that for most part don't really apply to day to your day work. This book wil help you to prepare for those terrible interviews.
+
+
+
+~~The book will facilitate the understanding of common issues when writing performant codes.~~
 
 # Table of Content
 
@@ -75,6 +79,8 @@ The book will facilitate the understanding of common issues when writing perform
 * Selection ---   ----- ----- ----- --- ----- ----- ----------  --------- ---- -- - --- --- -- -----  Day 34
 
 # How can I contact you? 📩
+
+Have questions, comments, or concerns? Feel free to [tweet at me.](https://twitter.com/holtbt) If there are typos, inaccuracies, or inconsistencies, please file an issue or make a pull request on the [GitHub repo](https://github.com/btholt/four-semesters-of-cs).
 
 If you want to say hello, contribute by telling that some part is not well explained, suggest a new topic or share some good experience you had applying any concept explained here, you are welcome to drop me an email at:
 

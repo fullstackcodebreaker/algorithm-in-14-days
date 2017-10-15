@@ -14,7 +14,7 @@
   * Day 9
   * Day 10
 * Sorting
-  * Day 11
+  * [Day 11](day-11.md)
   * Day 12
   * Day 13
   * Day 14
