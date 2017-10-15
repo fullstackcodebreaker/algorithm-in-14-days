@@ -1,6 +1,8 @@
 # Tree
 
-Trees are one of the most commonly used data structures in web development. This statement holds true for both developers and users. Every web developer who has written HTML and loaded it into a web browser has created a tree, which is referred to as the Document Object Model \(DOM\). Every user of the Internet who has, in turn, consumed information on the Internet has received it in the form of a tree—the DOM.
+Every **web developer** who has written HTML and loaded it into a web browser has created a tree, which is referred to as the Document Object Model \(DOM\).
+
+Every **user** of the Internet who has, in turn, consumed information on the Internet has received it in the form of a tree—the DOM.
 
 Now, here's the climax: The article that you are reading at this moment is rendered in your browser as a tree! The paragraph that you are reading is represented as text in a`<p>`element; the`<p>`element is nested inside a`<body>`element; and the`<body>`element is nested inside an`<html>`element.
 
@@ -258,23 +260,23 @@ Since we have a conceptual model of breadth-first search, let's now implement th
 ```javascript
 Tree.prototype.traverseBF = function(callback) {
     var queue = new Queue();
-     
+
     queue.enqueue(this._root);
- 
+
     currentTree = queue.dequeue();
- 
+
     while(currentTree){
         for (var i = 0, length = currentTree.children.length; i < length; i++) {
             queue.enqueue(currentTree.children[i]);
         }
- 
+
         callback(currentTree);
         currentTree = queue.dequeue();
     }
 };
 ```
 
-Our definition of`traverseBF(callback)`contains a lot of logic. For this reason, I'll explain the logic in manageable steps: 
+Our definition of`traverseBF(callback)`contains a lot of logic. For this reason, I'll explain the logic in manageable steps:
 
 1. Create an instance of
    `Queue`
@@ -283,17 +285,17 @@ Our definition of`traverseBF(callback)`contains a lot of logic. For this reason,
    `traverseBF(callback)`
    to the instance of
    `Queue`
-   . 
+   . 
 3. Declare a variable named
    `currentNode`
    and initialize it to the
    `node`
-   we just added to our queue. 
+   we just added to our queue. 
 4. While
    `currentNode`
    points to a node, execute the code inside the
    `while`
-   loop. 
+   loop. 
 5. Use a
    `for`
    loop to iterate on the children of
@@ -301,23 +303,22 @@ Our definition of`traverseBF(callback)`contains a lot of logic. For this reason,
    .
 6. Inside the body of the
    `for`
-   loop, add every child to the queue. 
+   loop, add every child to the queue. 
 7. Take
    `currentNode`
    and pass it as an argument of
    `callback`
-   . 
+   . 
 8. Reassign
    `currentNode`
-   to the node being removed from the queue. 
+   to the node being removed from the queue. 
 9. Until
    `currentNode`
    does not point to a node—every node in the tree has been visited—repeat steps 4 to 8.
 
-**3 of 5:`contains(callback, traversal)`**  
+**3 of 5:**`contains(callback, traversal)`
 
-
-Let's define a method that will allow us to search for a particular value in our tree. To use either of our methods of tree traversal, I've defined `contains(callback, traversal)` to accept two arguments: the data to search and the type of traversal. 
+Let's define a method that will allow us to search for a particular value in our tree. To use either of our methods of tree traversal, I've defined `contains(callback, traversal)` to accept two arguments: the data to search and the type of traversal.
 
 ```javascript
 Tree.prototype.contains = function(callback, traversal) {
@@ -325,9 +326,9 @@ Tree.prototype.contains = function(callback, traversal) {
 };
 ```
 
-In the body of `contains(callback, traversal)`, we use a method named`call`to pass`this`and`callback`. The first argument binds`traversal` to the tree that invoked `contains(callback, traversal)`; the second argument is a function that is invoked on every node in our tree. 
+In the body of `contains(callback, traversal)`, we use a method named`call`to pass`this`and`callback`. The first argument binds`traversal` to the tree that invoked `contains(callback, traversal)`; the second argument is a function that is invoked on every node in our tree.
 
-Imagine that we want to log to the console any nodes that contain data with an odd number and traverse every node in our tree with BFS. This is the code we would write:
+Imagine that we want to log to the console any nodes that contain data with an odd number and traverse every node in our tree with BFS. This is the code we would write:
 
 ```javascript
 // tree is an example of a root node
@@ -336,12 +337,11 @@ tree.contains(function(node){
         console.log(node);
     }
 }, tree.traverseBF);
-
 ```
 
-**4 of 5:`add(data, toData, traversal)`**
+**4 of 5:**`add(data, toData, traversal)`
 
-We now have a method to search for a specific node in our tree. Let's now define a method that will enable us to add a node to a specific node.  
+We now have a method to search for a specific node in our tree. Let's now define a method that will enable us to add a node to a specific node.
 
 ```javascript
 Tree.prototype.add = function(data, toData, traversal) {
@@ -352,9 +352,9 @@ Tree.prototype.add = function(data, toData, traversal) {
                 parent = node;
             }
         };
- 
+
     this.contains(callback, traversal);
- 
+
     if (parent) {
         parent.children.push(child);
         child.parent = parent;
@@ -364,64 +364,64 @@ Tree.prototype.add = function(data, toData, traversal) {
 };
 ```
 
-`add(data, toData, traversal)` defines three parameters. The first parameter,`data`, is used to create a new instance of`Node`. The second parameter,`toData`, is used to compare against every node in a tree. The third parameter,`traversal`, is the type of tree traversal used in this method. 
+`add(data, toData, traversal)` defines three parameters. The first parameter,`data`, is used to create a new instance of`Node`. The second parameter,`toData`, is used to compare against every node in a tree. The third parameter,`traversal`, is the type of tree traversal used in this method.
 
-In the body of `add(data, toData, traversal)`, we declare three variables. The first variable,`child`, is initialized as a new instance of`Node`. The second variable,`parent`, is initialized as`null`; but it will later point to any node in a tree that matches the value of`toData`. The reassignment of`parent`happens in the third variable we declare, which is`callback`. 
+In the body of `add(data, toData, traversal)`, we declare three variables. The first variable,`child`, is initialized as a new instance of`Node`. The second variable,`parent`, is initialized as`null`; but it will later point to any node in a tree that matches the value of`toData`. The reassignment of`parent`happens in the third variable we declare, which is`callback`.
 
-`callback`is a function that compares`toData`to every node's`data`property. If the`if`statement evaluates to`true`, then`parent`is assigned to the node that matched the comparison in the`if`statement. 
+`callback`is a function that compares`toData`to every node's`data`property. If the`if`statement evaluates to`true`, then`parent`is assigned to the node that matched the comparison in the`if`statement.
 
-The actual comparison of every node to`toData` occurs in `contains(callback, traversal)`. The type of traversal and`callback`must be passed as arguments of `contains(callback, traversal)`. 
+The actual comparison of every node to`toData` occurs in `contains(callback, traversal)`. The type of traversal and`callback`must be passed as arguments of `contains(callback, traversal)`.
 
-Finally, if`parent`does exist in the tree, we push`child`into`parent.children`; we also assign`parent`to the parent of`child`. Else, we throw an error. 
+Finally, if`parent`does exist in the tree, we push`child`into`parent.children`; we also assign`parent`to the parent of`child`. Else, we throw an error.
 
-Let's use `add(data, toData, traversal)` in an example: 
+Let's use `add(data, toData, traversal)` in an example:
 
 ```javascript
 var tree = new Tree('CEO');
- 
+
 tree.add('VP of Happiness', 'CEO', tree.traverseBF);
- 
+
 /*
- 
+
 our tree
- 
+
 'CEO'
 └── 'VP of Happiness'
- 
+
 */
 ```
 
-Here's a more complex example of 
+Here's a more complex example of
 
-`add(addData, toData, traversal)`: 
+`add(addData, toData, traversal)`:
 
 ```javascript
 var tree = new Tree('CEO');
- 
+
 tree.add('VP of Happiness', 'CEO', tree.traverseBF);
 tree.add('VP of Finance', 'CEO', tree.traverseBF);
 tree.add('VP of Sadness', 'CEO', tree.traverseBF);
- 
+
 tree.add('Director of Puppies', 'VP of Finance', tree.traverseBF);
 tree.add('Manager of Puppies', 'Director of Puppies', tree.traverseBF);
- 
+
 /*
- 
+
  tree
- 
+
  'CEO'
  ├── 'VP of Happiness'
  ├── 'VP of Finance'
  │   ├── 'Director of Puppies'
  │   └── 'Manager of Puppies'
  └── 'VP of Sadness'
- 
+
  */
 ```
 
-**5 of 5:`remove(data, fromData, traversal)`**
+**5 of 5:**`remove(data, fromData, traversal)`
 
-To complete our implementation of`Tree`, we will add a method named `remove(data, fromData, traversal)`. Similar to removing a node from the DOM, this method will remove a node and all of its children.
+To complete our implementation of`Tree`, we will add a method named `remove(data, fromData, traversal)`. Similar to removing a node from the DOM, this method will remove a node and all of its children.
 
 ```javascript
 Tree.prototype.remove = function(data, fromData, traversal) {
@@ -429,18 +429,18 @@ Tree.prototype.remove = function(data, fromData, traversal) {
         parent = null,
         childToRemove = null,
         index;
- 
+
     var callback = function(node) {
         if (node.data === fromData) {
             parent = node;
         }
     };
- 
+
     this.contains(callback, traversal);
- 
+
     if (parent) {
         index = findIndex(parent.children, data);
- 
+
         if (index === undefined) {
             throw new Error('Node to remove does not exist.');
         } else {
@@ -449,39 +449,38 @@ Tree.prototype.remove = function(data, fromData, traversal) {
     } else {
         throw new Error('Parent does not exist.');
     }
- 
+
     return childToRemove;
 };
-
 ```
 
-Similar to `add(data, toData, traversal)`, remove traverses a tree to find a node that contains the second argument, which is now`fromData`. If this node is found, then`parent`points to it. 
+Similar to `add(data, toData, traversal)`, remove traverses a tree to find a node that contains the second argument, which is now`fromData`. If this node is found, then`parent`points to it.
 
 At this moment, we reach our first`if`statement. If`parent`does not exist, we throw an error. If`parent`does exist, we invoke`findIndex()`with`parent.children`and the data we want to remove from the children nodes of`parent`. \(`findIndex()`is a helper method that I defined below.\)
 
 ```javascript
 function findIndex(arr, data) {
     var index;
- 
+
     for (var i = 0; i < arr.length; i++) {
         if (arr[i].data === data) {
             index = i;
         }
     }
- 
+
     return index;
 }
 ```
 
-Inside `findIndex()`, the following logic occurs. If any of the nodes in`parent.children`contain data that match`data`, the variable`index`is assigned an integer. If none of the children's data properties match`data`, then`index`retains its default value of`undefined`. On the last line of`findIndex()`, we return`index`. 
+Inside `findIndex()`, the following logic occurs. If any of the nodes in`parent.children`contain data that match`data`, the variable`index`is assigned an integer. If none of the children's data properties match`data`, then`index`retains its default value of`undefined`. On the last line of`findIndex()`, we return`index`.
 
-We now return to`remove(data, fromData, traversal)`. If`index`is`undefined`, an error is thrown. If`index`is defined, we use it to splice the node we want to remove from the children of`parent`; we also assign the removed child to`childToRemove`. 
+We now return to`remove(data, fromData, traversal)`. If`index`is`undefined`, an error is thrown. If`index`is defined, we use it to splice the node we want to remove from the children of`parent`; we also assign the removed child to`childToRemove`.
 
-Finally, we return`childToRemove`. 
+Finally, we return`childToRemove`.
 
 ### Complete Implementation of a Tree
 
-Our implementation of`Tree`is complete. Take a look—we've accomplished a lot: 
+Our implementation of`Tree`is complete. Take a look—we've accomplished a lot:
 
 ```javascript
 function Node(data) {
@@ -489,14 +488,14 @@ function Node(data) {
     this.parent = null;
     this.children = [];
 }
- 
+
 function Tree(data) {
     var node = new Node(data);
     this._root = node;
 }
- 
+
 Tree.prototype.traverseDF = function(callback) {
- 
+
     // this is a recurse and immediately-invoking function
     (function recurse(currentNode) {
         // step 2
@@ -504,36 +503,36 @@ Tree.prototype.traverseDF = function(callback) {
             // step 3
             recurse(currentNode.children[i]);
         }
- 
+
         // step 4
         callback(currentNode);
- 
+
         // step 1
     })(this._root);
- 
+
 };
- 
+
 Tree.prototype.traverseBF = function(callback) {
     var queue = new Queue();
- 
+
     queue.enqueue(this._root);
- 
+
     currentTree = queue.dequeue();
- 
+
     while(currentTree){
         for (var i = 0, length = currentTree.children.length; i < length; i++) {
             queue.enqueue(currentTree.children[i]);
         }
- 
+
         callback(currentTree);
         currentTree = queue.dequeue();
     }
 };
- 
+
 Tree.prototype.contains = function(callback, traversal) {
     traversal.call(this, callback);
 };
- 
+
 Tree.prototype.add = function(data, toData, traversal) {
     var child = new Node(data),
         parent = null,
@@ -542,9 +541,9 @@ Tree.prototype.add = function(data, toData, traversal) {
                 parent = node;
             }
         };
- 
+
     this.contains(callback, traversal);
- 
+
     if (parent) {
         parent.children.push(child);
         child.parent = parent;
@@ -552,24 +551,24 @@ Tree.prototype.add = function(data, toData, traversal) {
         throw new Error('Cannot add node to a non-existent parent.');
     }
 };
- 
+
 Tree.prototype.remove = function(data, fromData, traversal) {
     var tree = this,
         parent = null,
         childToRemove = null,
         index;
- 
+
     var callback = function(node) {
         if (node.data === fromData) {
             parent = node;
         }
     };
- 
+
     this.contains(callback, traversal);
- 
+
     if (parent) {
         index = findIndex(parent.children, data);
- 
+
         if (index === undefined) {
             throw new Error('Node to remove does not exist.');
         } else {
@@ -578,24 +577,24 @@ Tree.prototype.remove = function(data, fromData, traversal) {
     } else {
         throw new Error('Parent does not exist.');
     }
- 
+
     return childToRemove;
 };
- 
+
 function findIndex(arr, data) {
     var index;
- 
+
     for (var i = 0; i < arr.length; i++) {
         if (arr[i].data === data) {
             index = i;
         }
     }
- 
+
     return index;
 }
 ```
 
-## Conclusion 
+## Conclusion
 
-Trees simulate hierarchical data. Much of the world around us resembles this type of hierarchy, such as web pages and our families. Any time you find yourself in need of structuring data with hierarchy, consider using a tree. 
+Trees simulate hierarchical data. Much of the world around us resembles this type of hierarchy, such as web pages and our families. Any time you find yourself in need of structuring data with hierarchy, consider using a tree.
 
