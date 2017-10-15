@@ -10,6 +10,16 @@ The nesting of data is similar to a family tree. The`<html>`element is a parent,
 
 In this article, we will create a tree using two different methods of tree traversal: Depth-First Search \(DFS\) and Breadth-First Search \(BFS\). \(If the word traversal is unfamiliar to you, consider it to mean visiting every node of the tree.\) Both of these types of traversals highlight different ways of interacting with a tree; both travels, moreover, incorporate the use of data structures that we've covered in this series. DFS uses a stack and BFS uses a queue to visit nodes. That's cool!
 
+# What is Tree used for?
+
+* passing a code under the hood
+* 3D Graphics 
+* Auto complete
+* A lot of game logic
+* Searching for things
+
+Trees are super useful, we use them all the time. We see them a lot in interviews as well
+
 # Linked List
 
 Two of the most commonly taught data structures in computer science are the singly-linked list and doubly-linked list.
