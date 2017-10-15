@@ -42,17 +42,13 @@ I wrote this book because I am super frustrated with the interview process for b
 
 ### Data Structure
 
-* **Stack & Queue** --- _Day 1_
+* **Stacks and Queues** --- _Day 1_
 * **Trees & Searching** --- _Day 2_
 * **Binary Search** --- _Day 3_
 * **Hash table --- **_Day 4_
 * **Graph** --- _Day 5_
 * **Heap** --- _Day 7_
 * **Set** --- Day 7
-
-
-
-
 
 ### **Recursion**
 
