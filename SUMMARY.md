@@ -6,6 +6,7 @@
   * [Day 2](day-2.md)
   * [Day 3](day-3.md)
   * Day 4
+  * Day 2 & 3
 * Recursion
   * Day 5
   * Day 6
