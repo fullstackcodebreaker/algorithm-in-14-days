@@ -4,16 +4,15 @@ In programming courses, we all need to study data structures. Data structures ar
 
 Although we can construct many complex data structures using pointers, we present only the rudimentary ones:
 
-* Stack & Queue
-* Trees & Searching 
-* Tree
-* Set
-* Heap
-* Graph
-* Hash table
-* Binary Search
+* **Stacks and Queues**
+* **Trees & Searching**
+* **Binary Search**
+* **Hash table**
+* **Graph**
+* **Heap**
+* **Set** 
 
-### 
+
 
 
 
