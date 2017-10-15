@@ -25,14 +25,18 @@ function BakeCake(flavor, icing){
     "
 }
 
-BakeCake('vanilla', true) => deliciousness
+BakeCake('vanilla', true) => deliciousnes
 ```
 
 In the same way you can slice a pie a 100 different ways, you can solve a single problem with many different algorithms. Some solutions are just more efficient, taking less time and requiring less space than others
 
 ---
 
-# Table of Content
+# Why this book?
+
+The book will facilitate the understanding of common issues when writing performant codes.
+
+#  Table of Content
 
 ### Data Structure
 
@@ -70,6 +74,20 @@ In the same way you can slice a pie a 100 different ways, you can solve a single
 * Quick
 * Selection
 
-**      
-**
+# **       **How can I contact you? 📩
+
+If you want to say hello, contribute by telling that some part is not well explained, suggest a new topic or share some good experience you had applying any concept explained here, you are welcome to drop me an email at:
+
+juoemeka \(at\) gmail.com. I’m constantly learning so it’s nice to exchange knowledge and keep in touch with other colleagues.
+
+**My Twitter:**[/twitter.com/emekadata](https://js.emekaonu.com/twitter.com/emekadata)
+
+* **My Blog:**[http://emekaonu.com/](http://emekaonu.com/)
+
+Also, you can check the**Github**repositories for the book, so you can report bugs, suggestions, new ideas, etc:
+
+* **Javascript Live Book:**
+  [https://github.com/emekaonu/javascript-live-book](https://github.com/emekaonu/javascript-live-book)
+
+
 
