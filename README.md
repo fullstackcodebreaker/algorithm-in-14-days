@@ -34,5 +34,48 @@ In the same way you can slice a pie a 100 different ways, you can solve a single
 
 ---
 
+# Table of Content
+
+### Data Structure
+
+* Stack 
+* Queue
+* Linkedin List
+* tree
+* Set
+* heap
+* Graph
+* Hash table
+* Binary search
+
+### **Recursion**
+
+* Factorial
+* Fibonacci
+* Flatten
+* Greatest common division
+* paintfill
+* pathCount
+* Recursion intro
+* reverse
+* String permutation
+
+### **Searching Algorithm**
+
+* Binary search
+
+### **Sorting algorithm**
+
+* Bubble sort
+* Heap 
+* Insertion
+* Merge
+* Quick
+* Selection
+
+**  
+**
+
+  
 
 
