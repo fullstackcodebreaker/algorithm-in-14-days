@@ -80,7 +80,7 @@ If you want to say hello, contribute by telling that some part is not well expla
 
 juoemeka \(at\) gmail.com. I’m constantly learning so it’s nice to exchange knowledge and keep in touch with other colleagues.
 
-**My Twitter:**[/twitter.com/emekadata](https://js.emekaonu.com/twitter.com/emekadata)
+**My Twitter:**[/twitter.com/emekadata](twitter.com/emekadata)
 
 * **My Blog:**[http://emekaonu.com/](http://emekaonu.com/)
 
