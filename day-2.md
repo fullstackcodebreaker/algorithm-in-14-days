@@ -2,9 +2,9 @@
 
 Every **web developer** who has written HTML and loaded it into a web browser has created a tree, which is referred to as the Document Object Model \(DOM\).
 
-Every **user** of the Internet who has, in turn, consumed information on the Internet has received it in the form of a tree—the DOM.
+Also, Every **user** of the Internet who has, in turn, consumed information on the Internet has received it in the form of a tree, the DOM.
 
-Now, here's the climax: The article that you are reading at this moment is rendered in your browser as a tree! The paragraph that you are reading is represented as text in a`<p>`element; the`<p>`element is nested inside a`<body>`element; and the`<body>`element is nested inside an`<html>`element.
+The article that you are reading at this moment is rendered in your browser as a tree! The paragraph that you are reading is represented as text in a`<p>`element; the`<p>`element is nested inside a`<body>`element; and the`<body>`element is nested inside an`<html>`element.
 
 The nesting of data is similar to a family tree. The`<html>`element is a parent, the`<body>`element is a child, and the`<p>`element is a child of the`<body>`element. If this analogy of a tree seems useful to you, then you will find comfort in knowing that more analogies will be used during our implementation of a tree.
 
