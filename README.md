@@ -2,15 +2,15 @@
 
 Doing things 1 step or 1% at a time is a great way to improve almost anything in your life.
 
-# Algorithm is dead simple
-
 ---
+
+# Algorithm is pretty simple
 
 Simply put, an algorithm is a series of contained steps, which you follow in order to achieve some goal, or to produce some output. Let’s take for example your grandma’s recipe for baking a cake. Wait, does that count as an algorithm? Sure it does!
 
-```
+```javascript
 function BakeCake(flavor, icing){
-    "
+    /*
      1. Heat Oven to 350 F
      2. Mix flour, baking powder, salt
      3. Beat butter and sugar until fluffy
@@ -22,7 +22,7 @@ function BakeCake(flavor, icing){
      9. Bake for 30 minutes
     10." + if(icing === true) return 'add icing' + "
     10. Stuff your face
-    "
+    */
 }
 
 BakeCake('vanilla', true) => deliciousnes
@@ -34,11 +34,9 @@ In the same way you can slice a pie a 100 different ways, you can solve a single
 
 # Why this book?
 
-I wrote this book because I am super frustrated with the interview process for becoming an engineer. Companies ask lots of super algorithmic questions that for most part don't really apply to day to your day work. This book wil help you to prepare for those terrible interviews.
+I wrote this book because I am super frustrated with the interview process for becoming an engineer. Companies ask lots of super algorithmic questions that for most part don't really apply to your day to day work. This book wil help you to prepare for those terrible interviews.
 
-
-
-~~The book will facilitate the understanding of common issues when writing performant codes.~~
+---
 
 # Table of Content
 
@@ -78,22 +76,11 @@ I wrote this book because I am super frustrated with the interview process for b
 * Quick ---   ----- ----- ----- --- ----- ----- ----- --- ----- ----------- ----- ----- -- ----- -----  Day 23
 * Selection ---   ----- ----- ----- --- ----- ----- ----------  --------- ---- -- - --- --- -- -----  Day 34
 
+---
+
 # How can I contact you? 📩
 
-Have questions, comments, or concerns? Feel free to [tweet at me.](https://twitter.com/holtbt) If there are typos, inaccuracies, or inconsistencies, please file an issue or make a pull request on the [GitHub repo](https://github.com/btholt/four-semesters-of-cs).
+Have questions, comments, or concerns? Feel free to [tweet at me.](https://twitter.com/emekadata) If there are typos, inaccuracies, or inconsistencies, please file an issue or make a pull request on the [https://github.com/emekaonu/algorithm-in-14-days](https://github.com/emekaonu/algorithm-in-14-days).
 
-If you want to say hello, contribute by telling that some part is not well explained, suggest a new topic or share some good experience you had applying any concept explained here, you are welcome to drop me an email at:
-
-juoemeka \(at\) gmail.com. I’m constantly learning so it’s nice to exchange knowledge and keep in touch with other colleagues.
-
-**My Twitter:**[/twitter.com/emekadata](twitter.com/emekadata)
-
-* **My Blog:**[http://emekaonu.com/](http://emekaonu.com/)
-
-Also, you can check the**Github**repositories for the book, so you can report bugs, suggestions, new ideas, etc:
-
-* **Javascript Live Book:**
-  [https://github.com/emekaonu/javascript-live-book](https://github.com/emekaonu/javascript-live-book)
-
-
+Also, you are welcome to check other interesting articles on my blog [http://emekaonu.com/](http://emekaonu.com/)
 
