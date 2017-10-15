@@ -1,5 +1,3 @@
-
-
 # Why 14 Days?
 
 Doing things 1 step or 1% at a time is a great way to improve almost anything in your life.
@@ -39,21 +37,20 @@ In the same way you can slice a pie a 100 different ways, you can solve a single
 ### Data Structure
 
 * Stack & Queue  --- Day 1
-* Linkedin List  ---- Day 2
-* tree
-
+* Linkedin List  ------ Day 2
+* Tree
 * Set
-* heap
+* Heap
 * Graph
 * Hash table
-* Binary search
+* Binary Search
 
 ### **Recursion**
 
 * Factorial
 * Fibonacci
 * Flatten
-* Greatest common division
+* Greatest Common Division
 * paintfill
 * pathCount
 * Recursion intro
@@ -73,6 +70,6 @@ In the same way you can slice a pie a 100 different ways, you can solve a single
 * Quick
 * Selection
 
-**    
+**      
 **
 
