@@ -50,7 +50,7 @@ I wrote this book because I am super frustrated with the interview process for b
 * **Heap** --- _Day 7_
 * **Set** --- Day 7
 
-### **Recursion**
+### Recursion
 
 * Factorial ---   ----- ----- ----- --- ----- ----- ----- --- ----- ------- ----- --------- ---- ----- Day 9
 * Fibonacci ---   ----- ----- ----- --- ----- ----- ----- --- ------ ----- --------- ---- ----- ----- Day 10
