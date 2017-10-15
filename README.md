@@ -32,9 +32,9 @@ In the same way you can slice a pie a 100 different ways, you can solve a single
 
 ---
 
-# Why this book?
+# Why this study note?
 
-I wrote this book because I am super frustrated with the interview process for becoming an engineer. Companies ask lots of super algorithmic questions that for most part don't really apply to your day to day work. This book wil help you to prepare for those terrible interviews.
+I made this note because I am super frustrated with the interview process for becoming an engineer. Companies ask lots of super algorithmic questions that for most part don't really apply to your day to day work. This book wil help you to prepare for those terrible interviews.
 
 ---
 
