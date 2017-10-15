@@ -24,7 +24,7 @@ There are two operations of stack:
 
 For a given constructor, each instance of the constructor has two properties`_size`and`_storage`.
 
-```
+```javascript
 function Stack() {
     this._size = 0;
     this._storage = {};
@@ -48,7 +48,7 @@ We have two requirements for this method:
 1. Every time we add data, we want to increment the size of our stack.
 2. Every time we add data, we want to retain the order in which it was added.
 
-```
+```javascript
 Stack.prototype.push = function(data) {
     // increases the size of our storage
     var size = this._size++;
@@ -70,7 +70,7 @@ Here are our goals for this method:
 3. Decrement`_this._size`by one.
 4. Return the most recently deleted data.
 
-```
+```javascript
 Stack.prototype.pop = function() {
     var size = this._size,
         deletedData;
@@ -92,7 +92,7 @@ A problem arises, however, when we reverse the order of invocation. Consider the
 
 To handle this use case, we will add an`if`statement to`pop()`.
 
-```
+```javascript
 Stack.prototype.pop = function() {
     var size = this._size,
         deletedData;
@@ -114,7 +114,7 @@ With the addition of our`if`statement, the body of our code is executed only whe
 
 Our implementation of`Stack`is complete. Regardless of the order in which we invoke either of our methods, our code works! Here is the final version of our code:
 
-```
+```javascript
 function Stack() {
     this._size = 0;
     this._storage = {};
@@ -175,7 +175,7 @@ Now let us write the code for a queue!
 
 For our implementation, we will create a constructor named`Queue`. We will then add three properties:`_oldestIndex`,`_newestIndex`, and`_storage`. The need for both `_oldestIndex`and`_newestIndex`will become clearer during the next section.
 
-```
+```javascript
 function Queue() {
     this._oldestIndex = 1;
     this._newestIndex = 1;
@@ -241,7 +241,7 @@ For`enqueue`, we have two objectives:
 
 Based on these two objectives, we will create the following implementation of`enqueue(data)`:
 
-```
+```javascript
 Queue.prototype.enqueue = function(data) {
     this._storage[this._newestIndex] = data;
     this._newestIndex++;
@@ -259,7 +259,7 @@ Here are the objectives for this method:
 1. Remove the oldest data in a queue.
 2. Increment`_oldestIndex`by one.
 
-```
+```javascript
 Queue.prototype.dequeue = function() {
     var oldestIndex = this._oldestIndex,
         deletedData = this._storage[oldestIndex];
@@ -277,7 +277,7 @@ Next, we delete the oldest index in the queue. After it is deleted, we increment
 
 Similar to the problem in our first implementation of`pop()` with a stack, our implementation of`dequeue()`does not handle situations where data is removed before any data is added. We need to create a conditional to handle this use case.
 
-```
+```javascript
 Queue.prototype.dequeue = function() {
     var oldestIndex = this._oldestIndex,
         newestIndex = this._newestIndex,
@@ -299,7 +299,7 @@ Whenever the values of `oldestIndex`and`newestIndex` are not equal, then we exec
 
 Our implementation of a queue is complete. Let's view the entire code.
 
-```
+```javascript
 function Queue() {
     this._oldestIndex = 1;
     this._newestIndex = 1;
@@ -330,7 +330,9 @@ Queue.prototype.dequeue = function() {
 };
 ```
 
-## Conclusion
+## Exercise
+
+
 
 In this article, we've explored two linear data structures: stacks and queues. A stack stores data in sequential order and removes the most recently added data; a queue stores data in sequential order but removes the oldest added data.
 
