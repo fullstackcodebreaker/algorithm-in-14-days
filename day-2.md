@@ -342,12 +342,9 @@ Our list will include two constructors:`Node`and`DoublyList`. Let us outline the
 
 #### Node
 
-* `data`
-   stores a value.
-* `next`
-   points to the next node in the list.
-* `previous`
-   points to the previous node in the list.
+* `data`stores a value.
+* `next`points to the next node in the list.
+* `previous`points to the previous node in the list.
 
 #### DoublyList
 
